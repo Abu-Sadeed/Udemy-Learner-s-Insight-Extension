@@ -1,0 +1,25 @@
+{
+  "name": "udemy-learners-insight",
+  "version": "1.0.0",
+  "repository": "https://github.com/Abu-Sadeed/Udemy-Learner-s-Insight-Extension",
+  "description": "Insight Dashboad Plugin For Udemy User Account",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.ts",
+    "start": "webpack --watch --config webpack.dev.ts"
+  },
+  "author": "Sadeed",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.7",
+    "@types/chrome": "^0.0.273",
+    "copy-webpack-plugin": "^12.0.2",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^6.0.1"
+  }
+}
