@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Udemy Learner's Insight",
+  "version": "0.1.0",
+  "description": "Insight Dashboard Plugin For Udemy User Account",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.udemy.com/course/*"
+  ],
+  "icons": {
+    "16": "icon_simplified_16.png",
+    "32": "icon_simplified_32.png",
+    "64": "icon_simplified_64.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.udemy.com/course/*"
+      ],
+      "js": [
+        "src/content/contentScript.js"
+      ],
+      "css": [
+        "src/styles/index.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "src/background/background.js"
+  }
+}
